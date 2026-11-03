@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TestSprite/testsprite-cli/main/schemas/plan.schema.json",
+  "name": "Client Lead Capture Funnel Verification",
+  "description": "Verifies that submitting the demo request form displays success feedback and does not throw console errors.",
+  "priority": "p0",
+  "targetUrl": "https://example.com/demo",
+  "planSteps": [
+    {
+      "type": "assertion",
+      "description": "Assert that \"Schedule a Demo\" is visible"
+    },
+    {
+      "type": "action",
+      "description": "Type \"Jordan Smith\" into \"Full Name\""
+    },
+    {
+      "type": "action",
+      "description": "Type \"jordan@acmeenterprise.com\" into \"Work Email\""
+    },
+    {
+      "type": "action",
+      "description": "Type \"Acme Corp\" into \"Company\""
+    },
+    {
+      "type": "action",
+      "description": "Select \"50-250 employees\" from \"Company Size\""
+    },
+    {
+      "type": "action",
+      "description": "Click \"Submit Request\""
+    },
+    {
+      "type": "assertion",
+      "description": "Assert that \"Thank you for requesting a demo\" is visible"
+    }
+  ]
+}

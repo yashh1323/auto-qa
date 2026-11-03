@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TestSprite/testsprite-cli/main/schemas/plan.schema.json",
+  "name": "Client E-Commerce Cart & Checkout Verification",
+  "description": "Verifies that adding a product updates the cart count and proceeds to the checkout view.",
+  "priority": "p0",
+  "targetUrl": "https://example.com/store",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Click \"Products\""
+    },
+    {
+      "type": "action",
+      "description": "Click \"Add to Cart\""
+    },
+    {
+      "type": "assertion",
+      "description": "Assert that \"Added to cart\" is visible"
+    },
+    {
+      "type": "action",
+      "description": "Click \"View Cart\""
+    },
+    {
+      "type": "assertion",
+      "description": "Assert that \"1 Item\" is visible"
+    },
+    {
+      "type": "action",
+      "description": "Click \"Proceed to Checkout\""
+    },
+    {
+      "type": "assertion",
+      "description": "Assert that \"Shipping Information\" is visible"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "auto-qa-engine",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Zero-token E2E Playwright QA engine & dual-mode MCP server / Agent Skill for Claude Code, Google Antigravity, and Cursor.",
+  "license": "MIT",
+  "homepage": "https://github.com/yashh1323/auto-qa#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashh1323/auto-qa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yashh1323/auto-qa/issues"
+  },
+  "bin": {
+    "auto-qa": "./scripts/cli.js"
+  },
+  "scripts": {
+    "start": "node scripts/cli.js",
+    "mcp": "node scripts/cli.js mcp",
+    "doctor": "node scripts/cli.js doctor",
+    "test": "node tests/security_audit_runner.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "playwright",
+    "playwright-mcp",
+    "e2e-testing",
+    "qa-automation",
+    "claude-code",
+    "antigravity",
+    "gemini-cli",
+    "cursor",
+    "windsurf",
+    "ai-agents",
+    "agent-skills",
+    "self-healing-tests",
+    "browser-automation",
+    "browser-use",
+    "stagehand",
+    "testsprite",
+    "accessibility-tree",
+    "test-compiler",
+    "zero-token",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "commander": "^15.0.0",
+    "playwright": "^1.64.1"
+  }
+}
