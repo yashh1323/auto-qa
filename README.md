@@ -7,6 +7,10 @@
 [![Security Audit](https://img.shields.io/badge/Security%20Audit-6%2F6%20Passed-success)](./tests/security_audit_runner.mjs)
 [![Replay Cost](https://img.shields.io/badge/Token%20Replay%20Cost-%240.00-brightgreen)](#why-turn-by-turn-browser-agents-break-in-production)
 
+<p align="center">
+  <img src="./assets/auto-qa-hero-card.png" alt="Auto-QA 3-Stage Zero-Token Playwright Pipeline and Benchmarks" width="100%" />
+</p>
+
 If you have ever asked **Claude Code**, **Google Antigravity**, or **Cursor** to run end-to-end QA on your web app, you already know the two ways it goes wrong:
 
 1. **The "Blind Selector Guess" Loop**: The agent reads your React/Next.js source files, guesses what the rendered DOM looks like, writes a `.spec.ts` file, and hits `TimeoutError: locator('button.submit-btn') not found` five times in a row because of client hydration, portals, or CSS modules.
