@@ -1,6 +1,6 @@
 {
   "name": "auto-qa-engine",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "type": "module",
   "description": "Zero-token E2E Playwright QA engine & dual-mode MCP server / Agent Skill for Claude Code, Google Antigravity, and Cursor.",
   "license": "MIT",
@@ -19,7 +19,9 @@
     "start": "node scripts/cli.js",
     "mcp": "node scripts/cli.js mcp",
     "doctor": "node scripts/cli.js doctor",
-    "test": "node tests/security_audit_runner.mjs"
+    "test": "node tests/security_audit_runner.mjs && node tests/v2_1_features.test.mjs",
+    "test:security": "node tests/security_audit_runner.mjs",
+    "test:e2e": "node tests/v2_1_features.test.mjs"
   },
   "keywords": [
     "mcp",
@@ -47,7 +49,7 @@
     "typescript"
   ],
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=22.12.0"
   },
   "dependencies": {
     "commander": "^15.0.0",

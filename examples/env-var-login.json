@@ -1,0 +1,31 @@
+{
+  "$schema": "../references/plan-schema.json",
+  "projectId": "env-var-login-demo",
+  "type": "frontend",
+  "name": "Environment-Parameterized Login & Dashboard Verification",
+  "description": "Demonstrates strict ${ENV_VAR} secret placeholders that fail closed when unset and stay redacted in reports.",
+  "priority": "p0",
+  "targetUrl": "http://localhost:3000/login",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "type \"${QA_EMAIL}\" into \"Email\""
+    },
+    {
+      "type": "action",
+      "description": "type \"${QA_PASSWORD}\" into \"Password\""
+    },
+    {
+      "type": "action",
+      "description": "click \"Sign In\""
+    },
+    {
+      "type": "assertion",
+      "description": "verify URL contains \"/dashboard\""
+    },
+    {
+      "type": "assertion",
+      "description": "verify \"Dashboard\" is visible"
+    }
+  ]
+}
